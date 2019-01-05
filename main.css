@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    line-height: 1.15;
+    font-family: sans-serif;
+  }
+
+
+title {
+  margin: 2px;
+  font-size: 1.429em;
+}
+
+
+body {
+  font-family: 'Raleway' , sans-serif;
+  color: #424242;
+  margin: 0;
+}
+/*
+ *
+ * media queries to responsive my website to desktop, google nexus 5, Apple iPad
+ *
+ */
+
+@media screen and (max-width: 640px){
+.header {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+
+@media screen and (min-width: 1024px){
+.container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (min-width: 600px){
+.header {
+  box-orient: horizontal;
+  box-direction: normal;
+  flex-direction: row;
+  box-pack: justify;
+  justify-content: space-between;
+  box-align: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+}
+/*
+ *
+ * Header
+ * I take this code from https://github.com/ino1sr/udacity-build-a-portfolio-site
+ */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    border-bottom: 4px solid #9C27B0;
+    margin-bottom: 20px;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1;
+    color: inherit;
+    font-family: 'Julius Sans One', sans-serif;
+  }
+
+/*
+ *
+ * media queries to responsive my website to desktop, google nexus 5, Apple iPad
+ *
+ */
+@media screen and (max-width: 640px){
+.logo {
+    padding-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width: 640px){
+.header {
+    text-align: center;
+  }
+}
+
+
+header, nav, aside,  footer, section, article, div {
+  display: block;
+}
+
+
+.logo-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+}
+/*
+ *
+ * media queries to responsive my website to desktop, google nexus 5, Apple iPad
+ *
+ */
+
+@media screen and (min-width: 600px){
+.name-title {
+    text-align: right;
+  }
+}
+
+/*
+ * to change words to capital letters
+ */
+.name-title {
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 640px){
+.hero {
+    margin-bottom: 20px;
+  }
+}
+
+
+img {
+    max-width: 100%;
+    border-style: none;
+}
+
+
+.project-img {
+    max-width: 100%;
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30); /* add box-shadow for my images */
+}
+
+
+.imgstyle{
+display: block;
+height: auto;
+size:  1100px;
+}
+
+/*
+ * The flex container becomes flexible by setting the display property to flex
+ */
+
+.flex-container {
+  display: flex;
+}
+
+
+.flex-container > div {
+
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+@media screen and (min-width: 1024px){
+.projects-container {
+    width: 1100px;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 640px){
+.projects-container {
+    padding: 0 16px;
+  }
+}
+
+
+.projects-container {
+    margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 1024px){
+.projects-title {
+    font-size: 36px;
+    font-style: italic;
+  }
+}
+
+
+@media screen and (max-width: 640px){
+.projects-title {
+    font-size: 22px;
+  }
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 640px){
+.project {
+    padding-bottom: 16px;
+  }
+}
+
+
+.projects-title {
+    padding-bottom: 10px;
+}
+
+
+.text-thin {
+    font-weight: 100;
+    text-shadow: 2px 2px 5px #9C27B0;
+}
+
+/*
+ * Make the flexible items display in wrap column
+ I don't know how can I add this property so I search for it. so I take this code from https://github.com/ino1sr/udacity-build-a-portfolio-site
+ */
+
+.projects-list {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+  @media screen and (min-width: 600px){
+  .projects-list {
+      flex-flow: row wrap;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+  }
+}
+
+/*
+ * Use calc() to calculate the width
+ */
+
+  @media screen and (min-width: 1024px){
+.project {
+    width: calc(33.3333% - 16px);
+  }
+}
+
+@media screen and (min-width: 1024px){
+.project-card {
+    height: 400px;
+  }
+}
+
+/*
+ * The box-shadow property attaches one or more shadows to an element
+ */
+
+.project-card {
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.12);
+    max-width: 380px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 1024px){
+.project-name {
+    font-size: 18px;
+  }
+}
+
+
+.project-name {
+    padding-top: 3px ;
+    text-transform: uppercase;
+    font-family:sans-serif;
+}
+
+
+@media screen and (min-width: 1024px){
+.project-description, .project-link {
+    font-size: 18px;
+  }
+}
+
+
+p {
+    margin: 0;
+}
+
+
+.project-link {
+    padding: 2px;
+}
+
+
+.flag_att {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+
+
+.flag {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+
+.header__title {
+  font-weight: 400px;
+  font-size: 6em;
+  float:right;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #800080;
+}
+
+
+.header__sub_title {
+  font-weight: 70px;
+  font-size: 2em;
+  margin: 1.25em;
+  display: inline-block;
+  float: right;
+  vertical-align: bottom;
+  color: #000000;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+.footer_paragraph {
+  margin-top: 8em;
+  bottom: 0;
+   background-color:brown;
+   color: white;
+   font-size: 22px;
+   text-align: center;
+}
+
+/*
+ * Add love icon , I take this code from https://github.com/brenopolanski/udacity-build-a-portfolio-site
+ */
+.love {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    font-size: 1em;
+    color: #e74c3c;
+    transform: scale(0.9);
+    animation: love 0.5s infinite ease-in-out alternate-reverse;
+}
+
+
+.fa{
+  height: 28px;
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: baseline;
+  float: none;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook-official{
+  background: #3B5998;
+  color: white;
+}
